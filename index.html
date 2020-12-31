@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <title>Cart Detail</title>
+</head>
+<body>
+    <!---------------------- nav-bar ------------------------>
+    <div class="nav-bar">
+        <ul>
+            <li><a href=""><i class="fas fa-home"></i> HOME</a></li>
+            <li><a href=""><i class="fas fa-fire"></i> HOT DEALS</a></li>
+            <li><a href=""><i class="fas fa-book-open"></i> PRODUCT PORTFOLIO</a></li>
+            <li class="shopping-cart"><a href=""><i class="fas fa-shopping-cart"></i> SHOPPING CART</a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i> LOGOUT</a></li>   
+        </ul>
+    </div>
+    <!---------------------- header ------------------------->
+    <div class="header">
+        <img src="img/Logo.png" alt="Logo">
+        <input type="text" placeholder="Search...">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+    <!------------------------ main ------------------------>
+    <div class="main">
+        <h1>CART DETAIL</h1>
+        <div class="table">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/deital-product 1.jpg" alt="Product 1"><br>SamSung Galaxy Note 10+ (Plus)</td>
+                        <td>1</td>
+                        <td>16.300.000đ</td>
+                        <td><i class="far fa-minus-square"></i>1<i class="far fa-plus-square"></i>&ensp;<i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr class="active-row">
+                        <td><img src="img/deital-product 2.jpg" alt="Product 1"><br>SamSung Galaxy Note 20</td>
+                        <td>2</td>
+                        <td>17.900.000đ</td>
+                        <td><i class="far fa-minus-square"></i>2<i class="far fa-plus-square"></i>&ensp;<i
+                                class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/deital-product 3.jpg" alt="Product 1"><br>SamSung Galaxy Z Flip</td>
+                        <td>1</td>
+                        <td>20.200.000đ</td>
+                        <td><i class="far fa-minus-square"></i>1<i class="far fa-plus-square"></i>&ensp;<i
+                                class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    </tbody>
+                    <tr class="total">
+                        <td>TOTAL</td>
+                        <td>4</td>
+                        <td>72.300.000đ</td>
+                        <td><button type="submit">BUY NOW !</button></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+/************************ nav-bar ***********************/
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #eac435;
+  /* background-color: #546a7b; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul li {
+  width: 20%;
+}
+
+ul li a {
+  font-size: 1.3rem;
+  font-weight: 900;
+  display: block;
+  color: #469b9b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li:hover {
+  background-color: #546a7b;
+  color: #ffffff;
+}
+ul .shopping-cart{
+  background-color: #546a7b;
+}
+ul .shopping-cart a{
+  color: #ffffff;
+}
+@media screen and (min-width: 425px) {
+  ul {
+    height: 3.8rem;
+  }
+  ul li a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  ul li {
+    
+  }
+}
+
+/************************* header **************************/
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+.header img {
+  margin: 1rem 3rem 0 0;
+  width: 5rem;
+  height: 5rem;
+}
+.header input {
+  margin-top: 3rem;
+  width: 50rem;
+  height: 2rem;
+}
+.header i {
+  margin: 3rem 0 0 1.5rem;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 425px) {
+  .header input {
+    margin-top: 3rem;
+    width: 13rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header input {
+    margin-top: 3rem;
+    width: 30rem;
+    height: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header input {
+    margin-top: 3rem;
+    width: 50rem;
+    height: 2.5rem;
+  }
+  .header i {
+    margin: 3rem 0 0 1.5rem;
+    font-size: 2.2rem;
+  }
+}
+
+/******************** main *********************/
+.main {
+  margin-top: 5rem;
+}
+.main h1 {
+  text-align: center;
+  /* color: #1c885f; */
+  color: #558b82;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.content-table {
+  text-align: center;
+  border-collapse: collapse;
+  margin: 100px 140px;
+  min-width: 1200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  font-weight: 400;
+}
+
+.content-table tbody tr td img {
+  width: 10rem;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr td .far{
+  padding: 0.5rem;
+}
+
+.content-table tbody tr td .fas:hover{
+  color: red;
+}
+.content-table tbody tr.active-row {
+  font-weight: 700;
+  color: #009879;
+}
+.content-table .total {
+  background-color: #eac435;
+  height: 4rem;
+  color: #009879;
+}
+.content-table .total td {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.content-table .total button {
+  height: 3.5rem;
+  width: 9rem;
+  border-radius: 7%;
+  background-color: #009879;
+  color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 425px){
+  .content-table {
+    min-width: 10rem;
+  }
+}
+@media screen and (min-width: 768px){
+  .content-table{
+    min-width: 25rem;
+  }
+}
+@media screen and (min-width: 1024px){
+  .content-table{
+    min-width: 50rem;
+  }
+}
