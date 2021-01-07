@@ -37,10 +37,10 @@ ul li:hover {
   background-color: #546a7b;
   color: #ffffff;
 }
-ul .shopping-cart{
+ul .shopping-cart {
   background-color: #546a7b;
 }
-ul .shopping-cart a{
+ul .shopping-cart a {
   color: #ffffff;
 }
 @media screen and (min-width: 425px) {
@@ -53,7 +53,6 @@ ul .shopping-cart a{
 }
 @media screen and (min-width: 768px) {
   ul li {
-    
   }
 }
 
@@ -119,11 +118,24 @@ ul .shopping-cart a{
 .content-table {
   text-align: center;
   border-collapse: collapse;
-  margin: 100px 140px;
+  margin: 100px 430px;
   min-width: 1200px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 425px) {
+  .content-table {
+    margin: 100px 80px;
+    min-width: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .content-table {
+    margin: 100px 430px;
+    min-width: 50rem;
+  }
 }
 
 .content-table thead tr {
@@ -146,11 +158,11 @@ ul .shopping-cart a{
   background-color: #f3f3f3;
 }
 
-.content-table tbody tr td .far{
+.content-table tbody tr td .far {
   padding: 0.5rem;
 }
 
-.content-table tbody tr td .fas:hover{
+.content-table tbody tr td .fas:hover {
   color: red;
 }
 .content-table tbody tr.active-row {
@@ -175,20 +187,4 @@ ul .shopping-cart a{
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-weight: 700;
   font-size: 1.1rem;
-}
-
-@media screen and (min-width: 425px){
-  .content-table {
-    min-width: 10rem;
-  }
-}
-@media screen and (min-width: 768px){
-  .content-table{
-    min-width: 25rem;
-  }
-}
-@media screen and (min-width: 1024px){
-  .content-table{
-    min-width: 50rem;
-  }
 }
