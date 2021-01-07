@@ -35,11 +35,12 @@ ul li a {
 }
 ul li:hover {
   background-color: #546a7b;
+  color: #ffffff;
 }
-ul .product {
+ul .shopping-cart {
   background-color: #546a7b;
 }
-ul .product a {
+ul .shopping-cart a {
   color: #ffffff;
 }
 @media screen and (min-width: 425px) {
@@ -102,53 +103,88 @@ ul .product a {
     font-size: 2.2rem;
   }
 }
-/****************************** main *************************/
-h1 {
+
+/******************** main *********************/
+.main {
+  margin-top: 5rem;
+}
+.main h1 {
+  text-align: center;
+  /* color: #1c885f; */
   color: #558b82;
   font-size: 2.8rem;
   font-weight: 700;
-  text-align: center;
-  margin-top: 5rem;
 }
-.main {
+.content-table {
   text-align: center;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin-bottom: 10rem;
+  border-collapse: collapse;
+  margin: 100px 430px;
+  min-width: 1200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 425px) {
+  .content-table {
+    margin: 100px 80px;
+    min-width: 10rem;
+  }
 }
 
-.main .product {
-  padding-top: 5rem;
+@media screen and (min-width: 1024px) {
+  .content-table {
+    margin: 100px 430px;
+    min-width: 50rem;
+  }
 }
-.main .product img {
-  width: 15rem;
-  height: 15rem;
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  font-size: 1.3rem;
 }
-.main .product p {
-  color: red;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.main .product .is-line-through {
-  text-decoration: line-through;
-  color: black;
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
   font-weight: 400;
-  font-size: 1.1rem;
-}
-.main .product i {
-  padding-top: 1rem;
-  color: #469b9b;
-}
-.main .product h1 {
-  margin-top: 1rem;
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-.main .product h1:hover {
-  color: #469b9b;
 }
 
-.main .product .far {
-  padding: 1rem;
+.content-table tbody tr td img {
+  width: 10rem;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr td .far {
+  padding: 0.5rem;
+}
+
+.content-table tbody tr td .fas:hover {
+  color: red;
+}
+.content-table tbody tr.active-row {
+  font-weight: 700;
+  color: #009879;
+}
+.content-table .total {
+  background-color: #eac435;
+  height: 4rem;
+  color: #009879;
+}
+.content-table .total td {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.content-table .total button {
+  height: 3.5rem;
+  width: 9rem;
+  border-radius: 7%;
+  background-color: #009879;
+  color: #ffffff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-weight: 700;
+  font-size: 1.1rem;
 }
